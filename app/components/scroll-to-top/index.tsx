@@ -32,9 +32,9 @@ export const ScrollToTop = () => {
         <path
           d="M12 6V18M12 6L7 11M12 6L17 11"
           stroke="#000000"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>
