@@ -6,7 +6,7 @@ import { Technologies } from './components/technologies'
 
 export default function Home() {
   return (
-    <main>
+    <main className="w-screen">
       <Landing />
       <Technologies />
       <Experience />

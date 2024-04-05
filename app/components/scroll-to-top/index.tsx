@@ -1,13 +1,15 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export const ScrollToTop = () => {
   const [scrollHeight, setScrollHeight] = useState(0)
 
-  window.onscroll = function () {
-    setScrollHeight(document.documentElement.scrollTop)
-  }
+  useEffect(() => {
+    window.onscroll = function () {
+      setScrollHeight(document.documentElement.scrollTop)
+    }
+  }, [setScrollHeight])
 
   return scrollHeight !== 0 ? (
     <div

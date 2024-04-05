@@ -1,7 +1,15 @@
 'use client'
 
+import { useEffect, useState } from 'react'
+
 export function Landing() {
-  const width = window.screen.width
+  const [width, setWidth] = useState(0)
+
+  useEffect(() => {
+    if (window) {
+      setWidth(window.screen.width)
+    }
+  }, [setWidth])
 
   return (
     <section

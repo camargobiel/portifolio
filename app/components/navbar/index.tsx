@@ -2,14 +2,19 @@
 
 import Image from 'next/image'
 import GNCIcon from '../../../public/GNC.svg'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
+  const [width, setWidth] = useState(0)
 
-  const width = window.screen.width
+  useEffect(() => {
+    if (window) {
+      setWidth(window.screen.width)
+    }
+  }, [setWidth])
+
   const isMobile = width <= 650
-  console.log('isMobile', isMobile)
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({
