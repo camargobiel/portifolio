@@ -202,7 +202,10 @@ export function Technologies() {
   ]
 
   return (
-    <section id="techs" className="w-screen flex flex-col gap-14 bg-slate-200">
+    <section
+      id="techs"
+      className="w-screen h-screen min-h-[830px] flex flex-col gap-14 bg-slate-200"
+    >
       <h2 className="text-4xl text-primary pt-36 text-center">Tecnologias</h2>
       <section className={`grid grid-cols-3 gap-10 px-10`}>
         <div className="relative">

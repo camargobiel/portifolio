@@ -15,7 +15,7 @@ import { ProjectsMobile } from './components/ui/mobile/projects'
 import { ContactsMobile } from './components/ui/mobile/contacts'
 
 export default function Home() {
-  const [width, setWidth] = useState(0)
+  const [width, setWidth] = useState(1080)
 
   useEffect(() => {
     if (window) {
@@ -26,7 +26,7 @@ export default function Home() {
   const isMobile = width <= 650
 
   return (
-    <main>
+    <main className="max-w-[100vw] overflow-hidden">
       {isMobile ? (
         <>
           <NavbarMobile />

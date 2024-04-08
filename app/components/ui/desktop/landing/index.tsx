@@ -13,21 +13,21 @@ export function Landing() {
 
   return (
     <section
-      className={`flex h-[100vh] w-screen ${width >= 1300 ? 'pt-72' : 'pt-40 px-10'}  justify-evenly`}
+      className={`flex h-[100vh] w-screen ${width >= 1100 ? 'pt-72' : 'pt-40 px-10'}  justify-evenly`}
     >
       <section>
         <h2
-          className={`text-primary ${width >= 1300 ? ' text-[60px]' : ' text-[30px]'}`}
+          className={`text-primary ${width >= 1100 ? ' text-[60px]' : ' text-[30px]'}`}
         >
           Oi, sou o Gabriel.
         </h2>
         <h1
-          className={`text-white bg-primary transition-all ${width >= 1300 ? ' text-[60px]' : ' text-[30px]'}`}
+          className={`text-white bg-primary transition-all ${width >= 1100 ? ' text-[60px]' : ' text-[30px]'}`}
         >
           Programador Web Full Stack.
         </h1>
         <p
-          className={`${width >= 1300 ? 'text-[22px]' : 'text-[15px] text-wrap'} mt-5`}
+          className={`${width >= 1100 ? 'text-[22px]' : 'text-[15px] text-wrap'} mt-5`}
         >
           Desenvolvedor com mais de 2 anos de experiência e apaixonado no que
           faz. <br />

@@ -3,7 +3,7 @@ import Profile from '../../../../../public/images/perfil.jpg'
 
 export function Contacts() {
   return (
-    <section id="contacts" className="h-screen w-screen">
+    <section id="contacts" className="h-screen max-w-screen">
       <h2 className="text-4xl text-primary mb-24 pt-[170px] text-center">
         Contatos
       </h2>
