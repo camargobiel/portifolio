@@ -37,14 +37,14 @@ export default function Home() {
           <ContactsMobile />
         </>
       ) : (
-        <div>
+        <>
           <Navbar />
           <Landing />
           <Technologies />
           <Experience />
           <Projects />
           <Contacts />
-        </div>
+        </>
       )}
     </main>
   )

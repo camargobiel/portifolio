@@ -5,7 +5,7 @@ import Profile from '../../../../../public/images/perfil.jpg'
 
 export function ContactsMobile() {
   return (
-    <section id="contacts" className="h-screen p-3">
+    <section id="contacts" className="h-screen p-3 text-black">
       <h2 className="text-4xl text-primary mb-16 pt-32 text-center">
         Contatos
       </h2>
@@ -16,7 +16,7 @@ export function ContactsMobile() {
             className="w-48 h-48 rounded-full object-cover"
             alt="minha foto"
           />
-          <div className="flex flex-col gap-5 text-lg font-sans">
+          <div className="flex flex-col gap-5 text-lg font-sans text-black">
             <p>📍 São José do Rio Preto (SP)</p>
             <p>E-mail: camargoobiel@gmail.com</p>
             <p>Telefone/WhatsApp: (17) 99215-1281</p>

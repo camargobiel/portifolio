@@ -1,6 +1,8 @@
 export function LandingMobile() {
   return (
-    <section className={`flex h-[80vh] w-[100vw] pt-40 px-10  justify-evenly`}>
+    <section
+      className={`flex text-black h-[80vh] w-[100vw] pt-40 px-10  justify-evenly`}
+    >
       <section>
         <h2 className={`text-primary text-[30px]`}>Oi, sou o Gabriel.</h2>
         <h1 className={`text-white bg-primary transition-all text-[23px]`}>
