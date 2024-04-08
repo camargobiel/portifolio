@@ -13,7 +13,7 @@ export function Landing() {
 
   return (
     <section
-      className={`flex h-[100vh] w-[100vw] ${width >= 1300 ? 'pt-72' : 'pt-40 px-10'}  justify-evenly`}
+      className={`flex h-[100vh] w-screen ${width >= 1300 ? 'pt-72' : 'pt-40 px-10'}  justify-evenly`}
     >
       <section>
         <h2

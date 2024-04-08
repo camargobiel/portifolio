@@ -1,14 +1,16 @@
 export function Projects() {
   return (
-    <section id="projects" className="h-[100vh] bg-slate-200 px-10">
-      <h2 className="text-4xl text-primary mb-24 pt-[170px] text-center">
+    <section id="projects" className="h-[100vh] w-screen bg-slate-200 px-10">
+      <h2 className="text-4xl text-primary mb-24 pt-36 text-center">
         Meus projetos
       </h2>
-      <div className="grid grid-cols-3 place-items-center">
+      <section className="flex items-center gap-10">
         <div className="relative">
-          <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-primary"></span>
-          <span className="text-xl relative inline-block h-full w-full rounded border-2 border-primary bg-white px-3 py-1 text-primary transition duration-100">
-            <div className="border-primary rounded-lg p-5 w-[27vw] flex flex-col gap-3">
+          <span className="absolute top-0 left-0 mt-1 ml-1 h-96 w-full rounded bg-primary"></span>
+          <span className="text-xl relative inline-block h-96 w-full rounded border-2 border-primary bg-white px-3 py-1 text-primary transition duration-100">
+            <div
+              className={`border-primary rounded-lg flex p-5 flex-col gap-3`}
+            >
               <h2 className="text-2xl">Sistema de autenticação</h2>
               <a
                 target="_blank"
@@ -34,10 +36,12 @@ export function Projects() {
             </div>
           </span>
         </div>
-        <div className="relative h-full">
-          <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-primary"></span>
-          <span className="text-xl relative inline-block h-full w-full rounded border-2 border-primary bg-white px-3 py-1 text-primary transition duration-100">
-            <div className="border-primary rounded-lg p-5 w-[27vw] flex flex-col gap-3">
+        <div className="relative">
+          <span className="absolute top-0 left-0 mt-1 ml-1 h-96 w-full rounded bg-primary"></span>
+          <span className="text-xl relative inline-block  h-96 w-full rounded border-2 border-primary bg-white px-3 py-1 text-primary transition duration-100">
+            <div
+              className={`border-primary rounded-lg flex p-5 flex-col gap-3`}
+            >
               <h2 className="text-2xl">API Book trade</h2>
               <a
                 target="_blank"
@@ -47,7 +51,7 @@ export function Projects() {
                   Ver no github
                 </small>
               </a>
-              <h3 className="text-zinc-500 text-xl">
+              <h3 className={'text-zinc-500 text-xl'}>
                 API desenvolvida com base em Clean Architecture, testes
                 unitários e E2E
               </h3>
@@ -60,10 +64,12 @@ export function Projects() {
             </div>
           </span>
         </div>
-        <div className="relative h-full">
-          <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-primary"></span>
-          <span className="text-xl relative inline-block h-full w-full rounded border-2 border-primary bg-white px-3 py-1 text-primary transition duration-100">
-            <div className="border-primary rounded-lg p-5 w-[27vw] flex flex-col gap-3">
+        <div className="relative">
+          <span className="absolute top-0 left-0 mt-1 ml-1 h-96 w-full rounded bg-primary"></span>
+          <span className="text-xl relative inline-block  h-96 w-full rounded border-2 border-primary bg-white px-3 py-1 text-primary transition duration-100">
+            <div
+              className={`border-primary rounded-lg flex p-5 flex-col gap-3`}
+            >
               <h2 className="text-2xl">Projeto interdisciplinar acadêmico</h2>
               <a target="_blank" href="https://github.com/camargobiel/inter">
                 <small className="text-primary text-lg underline">
@@ -81,7 +87,7 @@ export function Projects() {
             </div>
           </span>
         </div>
-      </div>
+      </section>
     </section>
   )
 }

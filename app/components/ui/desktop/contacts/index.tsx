@@ -1,14 +1,14 @@
 import Image from 'next/image'
-import Profile from '../../../public/images/perfil.jpg'
+import Profile from '../../../../../public/images/perfil.jpg'
 
 export function Contacts() {
   return (
-    <section id="contacts" className="h-screen">
+    <section id="contacts" className="h-screen w-screen">
       <h2 className="text-4xl text-primary mb-24 pt-[170px] text-center">
         Contatos
       </h2>
       <div className="flex justify-center">
-        <div className="flex gap-10 items-center">
+        <div className={`flex gap-10 items-center`}>
           <Image
             src={Profile}
             className="w-64 h-64 rounded-full object-cover"

@@ -1,18 +1,4 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-
 export function Technologies() {
-  const [width, setWidth] = useState(0)
-
-  const isMobile = width <= 650
-
-  useEffect(() => {
-    if (window) {
-      setWidth(window.screen.width)
-    }
-  }, [setWidth])
-
   const mainTechs = [
     {
       title: 'Typescript',
@@ -216,23 +202,16 @@ export function Technologies() {
   ]
 
   return (
-    <section
-      id="techs"
-      className="w-[100vw] flex flex-col gap-14 bg-slate-200 p-10"
-    >
-      <h2 className="text-4xl text-primary mt-[calc(120px)] text-center">
-        Tecnologias
-      </h2>
-      <section
-        className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-3'} gap-10`}
-      >
+    <section id="techs" className="w-screen flex flex-col gap-14 bg-slate-200">
+      <h2 className="text-4xl text-primary pt-36 text-center">Tecnologias</h2>
+      <section className={`grid grid-cols-3 gap-10 px-10`}>
         <div className="relative">
           <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-primary"></span>
           <span className="text-xl relative inline-block h-full w-full rounded border-2 border-primary bg-white px-3 py-1 text-primary transition duration-100">
-            <div className="border-primary rounded-lg p-5 w-max flex flex-col gap-3">
+            <div className="border-primary rounded-lg p-5 w-full flex flex-col gap-3">
               <h2 className="text-2xl text-primary">Trabalho atualmente</h2>
               <section
-                className={`mt-5 grid ${isMobile ? 'grid-cols-2' : 'grid-cols-3'} place-items-center gap-7`}
+                className={`mt-5 grid grid-cols-3 place-items-center gap-7`}
               >
                 {mainTechs.map((item, index) => (
                   <div
@@ -250,10 +229,10 @@ export function Technologies() {
         <div className="relative">
           <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-primary"></span>
           <span className="text-xl relative inline-block h-full w-full rounded border-2 border-primary bg-white px-3 py-1 text-primary transition duration-100">
-            <div className="border-primary rounded-lg p-5 w-max flex flex-col gap-3">
+            <div className="border-primary rounded-lg p-5 w-full flex flex-col gap-3">
               <h2 className="text-2xl text-primary">Já trabalhei</h2>
               <section
-                className={`mt-5 grid ${isMobile ? 'grid-cols-2' : 'grid-cols-3'} place-items-center gap-7`}
+                className={`mt-5 grid grid-cols-3 place-items-center gap-7`}
               >
                 {alreadyWorkedTechs.map((item, index) => (
                   <div
@@ -271,10 +250,10 @@ export function Technologies() {
         <div className="relative">
           <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-primary"></span>
           <span className="text-xl relative inline-block h-full w-full rounded border-2 border-primary bg-white px-3 py-1 text-primary transition duration-100">
-            <div className="border-primary rounded-lg p-5 w-max flex flex-col gap-3">
+            <div className="border-primary rounded-lg p-5 w-full flex flex-col gap-3">
               <h2 className="text-2xl text-primary">Estou estudando</h2>
               <section
-                className={`mt-5 grid ${isMobile ? 'grid-cols-2' : 'grid-cols-3'} place-items-center gap-7`}
+                className={`mt-5 grid grid-cols-3 place-items-center gap-7`}
               >
                 {studyingTechs.map((item, index) => (
                   <div
